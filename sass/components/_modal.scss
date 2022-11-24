@@ -6,14 +6,18 @@
    transform: translate(-50%, -50%) scale(1);
    padding: 40px;
 
-   width: 528px;
-   height: 581px;
-   border-radius: 4px;
+   max-width: 450px;
+   width: calc(100% - 30px);
 
+   border-radius: 4px;
    background-color: var(--base-background);
 
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+   @media screen and (min-width: 1200px) {
+      max-width: 528px;
+   }
 }
 
 .is-hidden .modal {
@@ -68,7 +72,7 @@
    position: relative;
    margin-bottom: 10px;
 
-   &:last-child{
+   &:last-child {
       margin-bottom: 0px;
    }
 }
@@ -98,7 +102,7 @@
    &:focus-within {
       border-color: var(--action-color);
    }
-   &:focus-within+.modal__form-icon {
+   &:focus-within + .modal__form-icon {
       fill: var(--action-color);
    }
 }
@@ -127,7 +131,7 @@
       font-size: 12px;
       line-height: 14px;
       letter-spacing: 0.01em;
-   
+
       color: rgba(117, 117, 117, 0.5);
    }
 }

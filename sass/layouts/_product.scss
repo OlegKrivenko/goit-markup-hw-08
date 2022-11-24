@@ -1,6 +1,9 @@
 /* Секція "product. Чим ми займаємося*/
 .product {
    padding-bottom: 94px;
+   @media screen and (max-width: 1199px) {
+      display: none;
+   }
 }
 .product__list {
    display: flex;

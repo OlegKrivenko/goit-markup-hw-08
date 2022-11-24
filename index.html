@@ -72,7 +72,7 @@
       </section>
 
       <!-- Секція "feature", Особливості  -->
-      <!-- <section class="features">
+      <section class="features">
         <div class="container">
           <h2 class="section-caption visually-hidden">Особливості</h2>
           <ul class="features__list">
@@ -122,10 +122,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секція "product. Чим ми займаємося -->
-      <!-- <section class="product">
+      <section class="product">
         <div class="container">
           <h2 class="section-caption">Чим ми займаємося</h2>
           <ul class="product__list">
@@ -143,15 +143,27 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секція "team", Наша команда -->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="section-caption">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/teamcard1.jpg" alt="Ігор Дем'яненко" width="270" />
+              <img
+                srcset="
+                  ./images/team1-270x260.jpg    270w,
+                  ./images/team1-270x260@2x.jpg 540w,
+                  ./images/team1-354x374.jpg    354w,
+                  ./images/team1-354x374@2x.jpg 708w,
+                  ./images/team1-450x460.jpg    450w,
+                  ./images/team1-450x460@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/team1-450x460.jpg"
+                alt="Ігор Дем'яненко"
+              />
               <div class="team__box">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__subtitle">Product Designer</p>
@@ -189,7 +201,19 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/teamcard2.jpg" alt="Ольга Рєпіна" width="270" />
+              <img
+                srcset="
+                  ./images/team2-270x260.jpg    270w,
+                  ./images/team2-270x260@2x.jpg 540w,
+                  ./images/team2-354x374.jpg    354w,
+                  ./images/team2-354x374@2x.jpg 708w,
+                  ./images/team2-450x460.jpg    450w,
+                  ./images/team2-450x460@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/team2-450x460.jpg"
+                alt="Ольга Рєпіна"
+              />
               <div class="team__box">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__subtitle">Frontend Developer</p>
@@ -227,7 +251,19 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/teamcard3.jpg" alt="Микола Тарасов" width="270" />
+              <img
+                srcset="
+                  ./images/team3-270x260.jpg    270w,
+                  ./images/team3-270x260@2x.jpg 540w,
+                  ./images/team3-354x374.jpg    354w,
+                  ./images/team3-354x374@2x.jpg 708w,
+                  ./images/team3-450x460.jpg    450w,
+                  ./images/team3-450x460@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/team3-450x460.jpg"
+                alt="Микола Тарасов"
+              />
               <div class="team__box">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__subtitle">Marketing</p>
@@ -265,7 +301,19 @@
             </li>
 
             <li class="team__item">
-              <img src="./images/teamcard4.jpg" alt="Михайло Єрмаков" width="270" />
+              <img
+                srcset="
+                  ./images/team4-270x260.jpg    270w,
+                  ./images/team4-270x260@2x.jpg 540w,
+                  ./images/team4-354x374.jpg    354w,
+                  ./images/team4-354x374@2x.jpg 708w,
+                  ./images/team4-450x460.jpg    450w,
+                  ./images/team4-450x460@2x.jpg 900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
+                src="./images/team4-450x460.jpg"
+                alt="Михайло Єрмаков"
+              />
               <div class="team__box">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__subtitle">UI Designer</p>
@@ -303,7 +351,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секція "client. Постійні клієнти -->
       <!-- <section class="client">

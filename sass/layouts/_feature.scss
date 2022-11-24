@@ -1,17 +1,33 @@
 /* Секція "feature", Особливості */
 .features {
-   padding: 94px 0px;
+   padding: 60px 0px;
+
+   @media screen and (min-width: 1200px) {
+      padding: 94px 0px;
+   }
 }
 
 .features__list {
-   display: flex;
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+   }
 }
 
 .features__item {
-   width: calc((100% - 90px) / 4);
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
 
-   &:not(:last-child) {
-      margin-right: 30px;
+      &:not(:nth-child(2n)) {
+         margin-right: 30px;
+      }
+   }
+   @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+
+      &:not(:last-child) {
+         margin-right: 30px;
+      }
    }
 }
 .features__box {
@@ -32,6 +48,10 @@
    line-height: 1.14;
    letter-spacing: 0.03em;
    text-transform: uppercase;
+
+   @media screen and (max-width: 767px) {
+      text-align: center;
+   }
 }
 
 .features__subtitle {
