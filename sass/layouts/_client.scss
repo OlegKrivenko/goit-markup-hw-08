@@ -1,18 +1,33 @@
 /* Секція "client. Постійні клієнти*/
 .client {
-   padding-top: 94px;
-   padding-bottom: 94px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+
+   @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 94px;
+   }
 }
 .client__list {
    display: flex;
+   flex-wrap: wrap;
    justify-content: center;
    gap: 30px;
+}
+.client__item {
+   width: calc((100% - 30px) / 2);
+
+   @media screen and (min-width: 768px) {
+      width: calc((100% - 60px) / 3);
+   }
+   @media screen and (min-width: 1200px) {
+      width: calc((100% - 150px) / 6);
+   }
 }
 .client__link {
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 170px;
    height: 92px;
    border-radius: 4px;
    border: 1px solid #afb1b8;
@@ -29,4 +44,3 @@
 .client__icon {
    fill: currentColor;
 }
-
