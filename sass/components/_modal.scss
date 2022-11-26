@@ -155,7 +155,7 @@
 .modal__form-icon--checkbox {
    position: absolute;
    top: 4px;
-   left: 13px;
+   left: 0px;
    border: 2px solid var(--main-color);
    border-radius: 3px;
    overflow: hidden;
@@ -166,22 +166,32 @@
 }
 .modal__form-title--checkbox {
    display: inline;
-   padding-left: 36px;
+   padding-left: 25px;
 
    font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
+   font-size: 12px;
+   line-height: 1.17;
    letter-spacing: 0.03em;
 
    color: var(--main-second-color);
+
+   @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
 }
 .modal__form-link {
    font-weight: 400;
-   font-size: 14px;
-   line-height: 1.71;
+   font-size: 12px;
+   line-height: 1.17;
    letter-spacing: 0.03em;
 
    color: var(--action-color);
+
+   @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.71;
+   }
 }
 .modal__btn {
    display: block;
